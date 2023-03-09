@@ -49,7 +49,7 @@ export default {
   // },
   methods: {
     checkForm() {
-      axios.post('your-php-file.php', this.form)
+      axios.post('/index.php', this.form)
         .then(response => {
           this.successMessage = response.data;
         })
