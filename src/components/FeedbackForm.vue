@@ -49,7 +49,8 @@ export default {
   // },
   methods: {
     checkForm() {
-      axios.post('your-php-file.php', this.form)
+      console.log('Form data:', this.form); // отладочная информация
+      axios.post('index.php', this.form)
         .then(response => {
           this.successMessage = response.data;
         })
